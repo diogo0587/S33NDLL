@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8943FC71-15CE-4727-A643-B6FF36BE8753}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SeenTechnology.Domain</RootNamespace>
+    <AssemblyName>SeenTechnology.Domain</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Newtonsoft.Json.8.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Account.cs" />
+    <Compile Include="Entities\AccountSession.cs" />
+    <Compile Include="Entities\AccountStartPointOperation.cs" />
+    <Compile Include="Entities\Address.cs" />
+    <Compile Include="Entities\Alert.cs" />
+    <Compile Include="Entities\AlertAlternativeServiceEvent.cs" />
+    <Compile Include="Entities\AlertDetail.cs" />
+    <Compile Include="Entities\AlertOperation.cs" />
+    <Compile Include="Entities\AlertTrack.cs" />
+    <Compile Include="Entities\AlertType.cs" />
+    <Compile Include="Entities\AlertTypeDetail.cs" />
+    <Compile Include="Entities\Alternative.cs" />
+    <Compile Include="Entities\Application.cs" />
+    <Compile Include="Entities\ApplicationFlow.cs" />
+    <Compile Include="Entities\ApplicationFlowEntryPoint.cs" />
+    <Compile Include="Entities\ApplicationFlowSetup.cs" />
+    <Compile Include="Entities\ApplicationFlowSetupDetail.cs" />
+    <Compile Include="Entities\BiorecycleTemplate.cs" />
+    <Compile Include="Entities\City.cs" />
+    <Compile Include="Entities\ClusteredWorkflow.cs" />
+    <Compile Include="Entities\ClusteredWorkflowDetail.cs" />
+    <Compile Include="Entities\Component.cs" />
+    <Compile Include="Entities\ComponentModel.cs" />
+    <Compile Include="Entities\ComponentType.cs" />
+    <Compile Include="Entities\ConsultProspectAccount.cs" />
+    <Compile Include="Entities\ContractOperation.cs" />
+    <Compile Include="Entities\ContractService.cs" />
+    <Compile Include="Entities\CustomAlternative.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\DashboardEvent.cs" />
+    <Compile Include="Entities\DashboardEventType.cs" />
+    <Compile Include="Entities\DashPerformanceIndicator.cs" />
+    <Compile Include="Entities\DashPerformanceIndicatorAnalytic.cs" />
+    <Compile Include="Entities\DashQualityIndicator.cs" />
+    <Compile Include="Entities\DashSafetyIndicator.cs" />
+    <Compile Include="Entities\DeviceAllocated.cs" />
+    <Compile Include="Entities\Document.cs" />
+    <Compile Include="Entities\EDIData.cs" />
+    <Compile Include="Entities\EDIDataDetail.cs" />
+    <Compile Include="Entities\EDIDataType.cs" />
+    <Compile Include="Entities\Entity.cs" />
+    <Compile Include="Entities\GlobalizationResource.cs" />
+    <Compile Include="Entities\GpsPosition.cs" />
+    <Compile Include="Entities\GroupAddress.cs" />
+    <Compile Include="Entities\GroupAddressDetail.cs" />
+    <Compile Include="Entities\Holiday.cs" />
+    <Compile Include="Entities\Images.cs" />
+    <Compile Include="Entities\ImageType.cs" />
+    <Compile Include="Entities\ImportOrderService.cs" />
+    <Compile Include="Entities\ImportOrderServiceFile.cs" />
+    <Compile Include="Entities\ImportOrderServiceFileDetail.cs" />
+    <Compile Include="Entities\LayoutParameter.cs" />
+    <Compile Include="Entities\LogSendEMail.cs" />
+    <Compile Include="Entities\MessageType.cs" />
+    <Compile Include="Entities\MobileDevice.cs" />
+    <Compile Include="Entities\MobileDeviceControlVersion.cs" />
+    <Compile Include="Entities\MobileDeviceVersion.cs" />
+    <Compile Include="Entities\NotifyOrderService.cs" />
+    <Compile Include="Entities\NotSendServiceEventsAgain.cs" />
+    <Compile Include="Entities\NotSendServiceEventsAgainDetail.cs" />
+    <Compile Include="Entities\Operation.cs" />
+    <Compile Include="Entities\OperationEventRepique.cs" />
+    <Compile Include="Entities\OperationServiceType.cs" />
+    <Compile Include="Entities\OrderService.cs" />
+    <Compile Include="Entities\OrderServiceAttendance.cs" />
+    <Compile Include="Entities\OrderServiceCustomer.cs" />
+    <Compile Include="Entities\OrderServiceDetail.cs" />
+    <Compile Include="Entities\OrderServiceDetailComponent.cs" />
+    <Compile Include="Entities\OrderServiceExportCte.cs" />
+    <Compile Include="Entities\OrderServiceExportCteDetail.cs" />
+    <Compile Include="Entities\OrderServiceField.cs" />
+    <Compile Include="Entities\OrderServiceLayout.cs" />
+    <Compile Include="Entities\OrderServiceScheduleParameter.cs" />
+    <Compile Include="Entities\OrderServiceStatus.cs" />
+    <Compile Include="Entities\OrderServiceTracking.cs" />
+    <Compile Include="Entities\OrderServiceType.cs" />
+    <Compile Include="Entities\OrderServiceWorkflow.cs" />
+    <Compile Include="Entities\OrderServiceWorkFlowAgain.cs" />
+    <Compile Include="Entities\OrderServiceWorkflowAgainDetail.cs" />
+    <Compile Include="Entities\OrderServiceWorkflowDetail.cs" />
+    <Compile Include="Entities\OrderServiceWorkflowProduct.cs" />
+    <Compile Include="Entities\OrderServiceWorkflowProductComponent.cs" />
+    <Compile Include="Entities\OrderServiceWorkflowQuestionResponse.cs" />
+    <Compile Include="Entities\OrderServiceWorkflowToken.cs" />
+    <Compile Include="Entities\PAC.cs" />
+    <Compile Include="Entities\PACTemplate.cs" />
+    <Compile Include="Entities\Parameter.cs" />
+    <Compile Include="Entities\ParameterDashboardIndicator.cs" />
+    <Compile Include="Entities\PointOfInterest.cs" />
+    <Compile Include="Entities\Product.cs" />
+    <Compile Include="Entities\ProductCategory.cs" />
+    <Compile Include="Entities\ProductComponent.cs" />
+    <Compile Include="Entities\ProductModel.cs" />
+    <Compile Include="Entities\ProductType.cs" />
+    <Compile Include="Entities\Question.cs" />
+    <Compile Include="Entities\Questionnarie.cs" />
+    <Compile Include="Entities\QuestionType.cs" />
+    <Compile Include="Entities\RecordStatus.cs" />
+    <Compile Include="Entities\RequestTracking.cs" />
+    <Compile Include="Entities\RequestTrackingDetail.cs" />
+    <Compile Include="Entities\Route.cs" />
+    <Compile Include="Entities\RouteComponent.cs" />
+    <Compile Include="Entities\RouteDelivery.cs" />
+    <Compile Include="Entities\RouteDetail.cs" />
+    <Compile Include="Entities\RouteProduct.cs" />
+    <Compile Include="Entities\RouteStretch.cs" />
+    <Compile Include="Entities\ScanAuditing.cs" />
+    <Compile Include="Entities\ScanAuditingDetail.cs" />
+    <Compile Include="Entities\ScanAuditingDetailTracking.cs" />
+    <Compile Include="Entities\Scheduler.cs" />
+    <Compile Include="Entities\Segment.cs" />
+    <Compile Include="Entities\SendWorkflowToCustomer.cs" />
+    <Compile Include="Entities\ServiceEvent.cs" />
+    <Compile Include="Entities\ServiceEventGroup.cs" />
+    <Compile Include="Entities\ServiceEventType.cs" />
+    <Compile Include="Entities\ServiceEventWorkflow.cs" />
+    <Compile Include="Entities\ServiceLayoutDetail.cs" />
+    <Compile Include="Entities\ServiceLayoutHeader.cs" />
+    <Compile Include="Entities\ServiceType.cs" />
+    <Compile Include="Entities\ServiceTypeOrderServiceType.cs" />
+    <Compile Include="Entities\ServiceWorkflow.cs" />
+    <Compile Include="Entities\ServiceWorkflowConfiguration.cs" />
+    <Compile Include="Entities\ServiceWorkflowConfigurationDetail.cs" />
+    <Compile Include="Entities\ServiceWorkflowConfigurationQuestionnarie.cs" />
+    <Compile Include="Entities\SocketTracking.cs" />
+    <Compile Include="Entities\StartPoint.cs" />
+    <Compile Include="Entities\StartPointOperation.cs" />
+    <Compile Include="Entities\Support.cs" />
+    <Compile Include="Entities\SupportDetail.cs" />
+    <Compile Include="Entities\SupportOption.cs" />
+    <Compile Include="Entities\Technician.cs" />
+    <Compile Include="Entities\TypePerson.cs" />
+    <Compile Include="Entities\TypeSendingAlert.cs" />
+    <Compile Include="Entities\UiConfigurationMobile.cs" />
+    <Compile Include="Entities\ZipCodeRange.cs" />
+    <Compile Include="Entities\ZipCodeRangeStartPointOperation.cs" />
+    <Compile Include="Enums\JobTypeEnum.cs" />
+    <Compile Include="Enums\TimeUnitEnum.cs" />
+    <Compile Include="Interfaces\IRepository.cs" />
+    <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Util\ExtendCollection.cs" />
+    <Compile Include="Util\ExtendJson.cs" />
+    <Compile Include="Util\ExtendSecurity.cs" />
+    <Compile Include="Util\ExtendValidation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
